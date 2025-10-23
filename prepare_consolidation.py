@@ -22,9 +22,9 @@ def prepare_consolidation():
     while True:
 
         raw_path_directory_to_consolidate = input("\n    🟡 Enter the path of the directory to consolidate: ")
-        clen_path_directory_to_consolidate = raw_path_directory_to_consolidate.strip().strip("'\"")
+        clean_path_directory_to_consolidate = raw_path_directory_to_consolidate.strip().strip("'\"")
 
-        if os.path.isdir(clen_path_directory_to_consolidate) is False:
+        if os.path.isdir(clean_path_directory_to_consolidate) is False:
             validating_path_clock()
             print("\n        🔴 The entered path is not a valid directory. Please try again.")
 
