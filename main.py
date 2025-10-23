@@ -27,7 +27,7 @@ while True:
 
             for clock in clock_icons:
                 print(f"\r    🟢 Closing program... {clock} ", end="")
-                time.sleep(0.2)
+                time.sleep(0.1)
 
             print("")
             print("\n      🟢 Program Closed Successfully")

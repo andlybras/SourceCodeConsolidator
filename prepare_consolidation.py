@@ -10,7 +10,7 @@ def validating_path_clock():
 
     for clock in clock_icons:
         print(f"\r      🟢 Validating path... {clock} ", end="")
-        time.sleep(0.2)
+        time.sleep(0.1)
 
     print("")
 
@@ -35,14 +35,14 @@ def prepare_consolidation():
             file_name = consolidated_file_name()
 
             print("\n            🟢 Executing consolidation...")
-            executing_consolidation(file_name)
+            executing_consolidation(clean_path_directory_to_consolidate, file_name)
 
             clock_icons = ["🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛"]
             print("")
 
             for clock in clock_icons:
-                print(f"\r                🟢 Returning to menu... {clock} ", end="")
-                time.sleep(0.2)
+                print(f"\r                  🟢 Returning to menu... {clock} ", end="")
+                time.sleep(0.1)
 
             print("")
 
