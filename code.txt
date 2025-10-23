@@ -1,0 +1,11 @@
+--- DIRECTORY INDEX ---
+
+1 ➖ .git
+2 ➖ .gitignore
+3 ➖ consolidated_file_name.py
+4 ➖ executing_consolidation.py
+5 ➖ main.py
+6 ➖ prepare_consolidation.py
+7 ➖ README.md
+8 ➖ venv
+9 ➖ __pycache__
