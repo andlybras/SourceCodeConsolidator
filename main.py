@@ -12,27 +12,25 @@ while True:
 
     user_choice = input("\n  🟡 Enter an option (1, 2, or 3): ")
 
-    try:
+    if user_choice == "1":
+        prepare_consolidation()
 
-        if user_choice == "1":
-            prepare_consolidation()
+    elif user_choice == "2":
+        pass
 
-        elif user_choice == "2":
-            pass
+    elif user_choice == "3":
 
-        elif user_choice == "3":
+        clock_icons = ["🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛"]
+        print("")
 
-            clock_icons = ["🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛"]
-            print("")
+        for clock in clock_icons:
+            print(f"\r    🟢 Closing program... {clock} ", end="")
+            time.sleep(0.1)
 
-            for clock in clock_icons:
-                print(f"\r    🟢 Closing program... {clock} ", end="")
-                time.sleep(0.1)
+        print("")
+        print("\n      🟢 Program Closed Successfully")
+        print("\n" + "🔹" * 43)
+        break
 
-            print("")
-            print("\n      🟢 Program Closed Successfully")
-            print("\n" + "🔹" * 43)
-            break
-
-    except ValueError:
+    else:
         print("\n    🔴 Invalid option. Enter a valid input (1, 2, or 3)")
