@@ -4,6 +4,7 @@ from executing_consolidation import executing_consolidation
 from consolidated_file_name import consolidated_file_name
 
 def validating_path_clock():
+
     clock_icons = ["🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛"]
     print("")
 
@@ -14,6 +15,7 @@ def validating_path_clock():
     print("")
 
 def prepare_consolidation():
+
     print("\n" + "🔹" * 43)
     print("\n    🟢 Starting consolidation preparing")
 
@@ -28,8 +30,22 @@ def prepare_consolidation():
 
         else:
             validating_path_clock()
+
             print("\n        🟢 Directory path validated successfully")
-            consolidated_file_name()
-            print("\n          🟢 Executing consolidation...")
-            executing_consolidation()
+            file_name = consolidated_file_name()
+
+            print("\n            🟢 Executing consolidation...")
+            executing_consolidation(file_name)
+
+            clock_icons = ["🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛"]
+            print("")
+
+            for clock in clock_icons:
+                print(f"\r                🟢 Returning to menu... {clock} ", end="")
+                time.sleep(0.2)
+
+            print("")
+
+            print("\n" + "🔹" * 43)
+            print("\n" + "~" * 30 + " Source Code Consolidator " + "~" * 30)
             break

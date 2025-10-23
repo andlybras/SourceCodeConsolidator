@@ -30,7 +30,7 @@ while True:
                 time.sleep(0.2)
 
             print("")
-            print("\n" + "~" * 28 + " Program Closed Successfully " + "~" * 29)
+            print("\n      🟢 Program Closed Successfully")
             print("\n" + "🔹" * 43)
             break
 
