@@ -41,7 +41,7 @@ def prepare_consolidation():
             print("")
 
             for clock in clock_icons:
-                print(f"\r                  🟢 Returning to menu... {clock} ", end="")
+                print(f"\r                        🟢 Returning to menu... {clock} ", end="")
                 time.sleep(0.1)
 
             print("")
